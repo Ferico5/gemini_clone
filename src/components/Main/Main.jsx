@@ -74,7 +74,7 @@ const Main = () => {
                     <div>
                         <img src={imageIcon} alt="" />
                         <img src={micIcon} alt="" />
-                        <img onClick={()=>onSent()} src={sendIcon} alt="" />
+                        {input? <img onClick={()=>onSent()} src={sendIcon} alt="" /> : null}
                     </div>
                 </div>
                 <p className="bottom-info">
